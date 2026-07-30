@@ -1,8 +1,28 @@
 [
   {
-    "name": "測試1",
+    "name": "T1",
+    "price": 1000,
+    "image": "images/1.png"
+  },
+  {
+    "name": "T2",
+    "price": 2000,
+    "image": "images/2.png"
+  },
+  {
+    "name": "T3",
     "price": 3000,
-    "image": "images/test1.png"
+    "image": "images/3.png"
+  },
+  {
+    "name": "T4",
+    "price": 3000,
+    "image": "images/4.png"
+  },
+  {
+    "name": "T5",
+    "price": 3000,
+    "image": "images/5.png"
   }
 
 ]
