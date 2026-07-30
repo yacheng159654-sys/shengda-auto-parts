@@ -10,5 +10,7 @@
   "圖片名稱": images/XXX.png
 }
 
-注意: 文字敘述等內容改動都在index.html
+注意: 
+1. 文字敘述等內容改動都在index.html
+2. 表單需先註冊Formspree
 
