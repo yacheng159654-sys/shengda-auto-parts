@@ -4,51 +4,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>聖大汽車維修廠｜二手汽車零件、汽修工具出售｜新竹湖口</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description"
-content="聖大汽車維修廠位於新竹縣湖口鄉，提供二手汽車零件、引擎零件、變速箱零件、發電機、汽修工具及設備出售。">
+  <meta name="description" content="聖大汽車維修廠位於新竹縣湖口鄉，提供二手汽車零件、引擎零件、變速箱零件、發電機、汽修工具及設備出售。">
   
+  <!-- 引入 Google Fonts 提升整體字體質感 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>聖大汽車維修廠</h1>
-    <p>目前整理出售各式二手汽車零件、
-    汽修工具、發電機、引擎零件、
-    變速箱零件及維修設備。</p>
+  <header class="hero-header">
+    <div class="header-content">
+      <span class="badge">新竹湖口・二手拆車件/修車設備出清</span>
+      <h1>聖大汽車維修廠</h1>
+      <p>整理出售各式二手汽車零件、汽修工具、發電機、引擎/變速箱零件及維修設備。品質良好，歡迎私訊或來電詢問規格！</p>
+    </div>
   </header>
-  
-  <section>
-    <h2>商品列表</h2>
-    <div id="product-list"></div>
-  </section>
 
-  <section>
-    <h2>聯絡我們</h2>
-    <!-- 已綁定你的 Formspree 專屬 ID: mwvgzydp -->
-    <form action="https://formspree.io/f/mwvgzydp" method="POST">
+  <main class="main-content">
+    
+    <!-- 商品列表區塊 -->
+    <section class="section-block">
+      <div class="section-header">
+        <h2>📦 二手零件與設備列表</h2>
+        <p>點擊商品可查看細節或直接透過下方表單聯絡我們</p>
+      </div>
+      <div id="product-list"></div>
+    </section>
+
+    <!-- 聯絡與資訊區塊 (雙欄排版) -->
+    <div class="contact-wrapper">
       
-      <input type="text" name="姓名" placeholder="姓名" required>
-      
-      <input type="tel" name="電話" placeholder="電話" required>
-      
-      <!-- name 設為 email 可讓 Formspree 自動支援直接回覆客戶 -->
-      <input type="email" name="email" placeholder="Email" required>
-      
-      <textarea name="需求" placeholder="想購買哪個零件"></textarea>
-      
-      <button type="submit">送出</button>
-      
-    </form>
-  </section>
-  
-  <section class="contact">
-    <h2>聯絡資訊</h2>
-    <p>電話：(03) 590-2568</p>
-    <p>Email：yacheng159654@gmail.com</p>
-    <p>地址：新竹縣湖口鄉成功路664號</p>
-  </section>
+      <!-- 聯絡表單 -->
+      <section class="section-block form-section">
+        <h2>✉️ 線上詢價 / 需求單</h2>
+        <p class="sub-text">請留下您的需求與車款，我們會盡快回覆您</p>
+        <form action="https://formspree.io/f/mwvgzydp" method="POST" class="custom-form">
+          <div class="form-group">
+            <input type="text" name="姓名" placeholder="您的姓名" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" name="電話" placeholder="聯絡電話" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="電子郵件 (Email)" required>
+          </div>
+          <div class="form-group">
+            <textarea name="需求" rows="4" placeholder="請說明您想尋找的零件名稱、車款型號或年份..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">送出詢價單</button>
+        </form>
+      </section>
+
+      <!-- 聯絡資訊 -->
+      <section class="section-block contact-info">
+        <h2>📍 廠區資訊</h2>
+        <div class="info-list">
+          <div class="info-item">
+            <span class="icon">📞</span>
+            <div>
+              <strong>電話</strong>
+              <p><a href="tel:035902568">(03) 590-2568</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:yacheng159654@gmail.com">yacheng159654@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">🏢</span>
+            <div>
+              <strong>廠區地址</strong>
+              <p>新竹縣湖口鄉成功路664號</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 聖大汽車維修廠 Shengda Auto Repair. All Rights Reserved.</p>
+  </footer>
 
   <script src="js/products.js"></script>
 
