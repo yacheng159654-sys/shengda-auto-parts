@@ -1,72 +1,51 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>聖大汽車維修廠 二手零件出售</title>
-
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聖大汽車維修廠 二手零件出售</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-<h1>聖大汽車維修廠</h1>
-<p>二手汽修工具與零件出售</p>
-</header>
+  <header>
+    <h1>聖大汽車維修廠</h1>
+    <p>二手汽修工具與零件出售</p>
+  </header>
 
-<section class="contact">
+  <section class="contact">
+    <h2>聯絡資訊</h2>
+    <p>電話：(03) 590-2568</p>
+    <p>Email：yacheng159654@gmail.com</p>
+    <p>地址：新竹縣湖口鄉成功路664號</p>
+  </section>
 
-<h2>聯絡資訊</h2>
+  <section>
+    <h2>商品列表</h2>
+    <div id="product-list"></div>
+  </section>
 
-<p>電話：(03) 590-2568</p>
+  <section>
+    <h2>聯絡我們</h2>
+    <!-- 已綁定你的 Formspree 專屬 ID: mwvgzydp -->
+    <form action="https://formspree.io/f/mwvgzydp" method="POST">
+      
+      <input type="text" name="姓名" placeholder="姓名" required>
+      
+      <input type="tel" name="電話" placeholder="電話" required>
+      
+      <!-- name 設為 email 可讓 Formspree 自動支援直接回覆客戶 -->
+      <input type="email" name="email" placeholder="Email" required>
+      
+      <textarea name="需求" placeholder="想購買哪個零件"></textarea>
+      
+      <button type="submit">送出</button>
+      
+    </form>
+  </section>
 
-<p>Email：yacheng159654@gmail.com</p>
-
-<p>地址：新竹縣湖口鄉成功路664號</p>
-
-</section>
-
-<section>
-
-<h2>商品列表</h2>
-
-<div id="product-list"></div>
-
-</section>
-
-<section>
-
-<h2>聯絡我們</h2>
-
-<form
-action="https://formsubmit.co/yacheng159654@gmail.com"
-method="POST">
-
-<input type="text" name="姓名" placeholder="姓名" required>
-
-<input type="tel" name="電話" placeholder="電話" required>
-
-<input type="email" name="Email" placeholder="Email" required>
-
-<textarea
-name="需求"
-placeholder="想購買哪個零件"></textarea>
-
-<input
-type="hidden"
-name="_subject"
-value="網站新詢價">
-
-<button type="submit">
-送出
-</button>
-
-</form>
-
-</section>
-
-<script src="js/products.js"></script>
+  <script src="js/products.js"></script>
 
 </body>
 </html>
